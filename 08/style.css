@@ -1,53 +1,64 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f2f2f2;
+    background:#efefef;
+    font-family:Arial;
 }
 
 .container{
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.noticia{
-    background: white;
-    width: 500px;
-    margin: 20px;
-    padding-left: 15px;
-    padding-right: 10px;
-    text-align: justify;
-    line-height: 24px;
-    border: 1px solid #ccc;
-}
+    width:780px;
 
-.noticia h1{
-    margin: 8px;
-}
+    background:#d9d9d9;
 
-.imagem{
-    width: 150px;
-    padding: 10px;
-    float: left;
-}
+    margin:30px auto;
 
-.galeria-body{
-    background: #d9d9d9;
-}
+    display:flex;
 
-.galeria{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    flex-wrap:wrap;
+
+    padding:8px;
+
 }
 
 .card{
-    background: white;
-    padding: 10px;
-    border: 1px solid #999;
+
+    width:205px;
+
+    background:white;
+
+    margin:5px;
+
+    border:1px solid #ccc;
+
 }
 
 .card img{
-    width: 250px;
-    height: 180px;
-    object-fit: cover;
+
+    width:205px;
+
+    height:150px;
+
+    display:block;
+
+}
+
+.card p{
+
+    margin:8px;
+
+    font-size:14px;
+
+}
+
+.texto{
+
+    width:780px;
+
+    margin:auto;
+
+    text-align:justify;
+
+    font-size:13px;
+
+    line-height:22px;
+
 }
