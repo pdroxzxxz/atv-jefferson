@@ -22,8 +22,22 @@
 <script type="text/javascript">
      function minhapassagem(arg1,arg2){
             alert(arg1+arg2);
-     }
+           
+            var soma = arg1 + arg2
+            
+            var msg = 'a soma e igual a';
+            
+            alert(msg + soma);
+        
+        }
  
+function escreve(arg){
+      document.write(arg);
+}
+
+
+
+
  </script>
 
 <button onclick="minhapassagem('10,20')">Clique</button>
