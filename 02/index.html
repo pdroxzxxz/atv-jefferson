@@ -1,38 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercícios JavaScript</title>
 </head>
 <body>
-    <div>
-   <script>
-function calcularRaizes() {
-    let raiz25 = Math.sqrt(25);
-    let raiz36 = Math.sqrt(36);
-    let raiz49 = Math.sqrt(49);
 
-    console.log("Raiz de 25 = " + raiz25);
-    console.log("Raiz de 36 = " + raiz36);
-    console.log("Raiz de 49 = " + raiz49);
-}
+    <h2>Exercício 1 - Raízes quadradas</h2>
 
-calcularRaizes();
+    <div id="raizes"></div>
+
+    <h2>Ecrevendo na div</h2>
+
+    <div id="resultadoTexto"></div>
+
+    <h2>Escrevendo Texto dinâmico</h2>
+
+    <input type="text" id="texto">
+
+    <button onclick="mostrarTexto()">Mostrar texto</button>
+
+    <div id="resultadoDinamico"></div>
+
+    <h2>desafio</h2>
+
+    <button onclick="numerar()">Começar</button>
+
+    <div id="numeros"></div>
+
+    <script>
+
+        function calcularRaizes() {
+
+            let raiz25 = Math.sqrt(25);
+
+            let raiz36 = Math.sqrt(36);
+
+            let raiz49 = Math.sqrt(49);
+
+            document.getElementById("raizes").innerHTML =
+            "Raiz de 25 = " + raiz25 + "<br>" +
+            "Raiz de 36 = " + raiz36 + "<br>" +
+            "Raiz de 49 = " + raiz49;
+
+        }
+
+        calcularRaizes();
 
 
-</script>
+        function escreveDiv() {
+
+            document.getElementById("resultadoTexto").innerHTML =
+            "Olá! Este texto foi escrito dentro da div.";
+
+        }
+
+        escreveDiv();
 
 
+        function mostrarTexto() {
+
+            let texto = document.getElementById("texto").value;
+
+            document.getElementById("resultadoDinamico").innerHTML = texto;
+
+        }
 
 
- 
+        function numerar() {
 
+            let n = parseInt(prompt("Digite um número:"));
 
+            let texto = "";
 
+            for (let i = 1; i <= n; i++) {
 
+                texto += i + "<br>";
 
+            }
 
+            document.getElementById("numeros").innerHTML = texto;
+
+        }
+
+    </script>
 
 </body>
 </html>
