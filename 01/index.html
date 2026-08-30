@@ -3,52 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste java</title>
+    <title>java script</title>
+</head>
+<body>
+    
 <script>
-    alert('Teste j5')  
+function minhaFuncao() {
+alert("Teste JS");
+}
 
+function minhaFuncaoArg(arg) {
+alert(arg);
+}
+
+function minhaFuncaoNumerica(arg1, arg2) {
+alert(arg1 + arg2);
+}
+
+function minhaFuncaoSoma(arg1, arg2) {
+var soma = arg1 + arg2;
+var msg = "A soma é igual a ";
+alert(msg + soma);
+}
+
+function escreve(arg) {
+document.write(arg);
+}
 </script>
-
-
-
 </head>
 
 <body>
-<h1>teste java script</h1>
-<button onclick="minhafunção()">Clique</button>
 
- <button onclick="escreve('<h1>PROGRAMAÇÃO WEB</h1>')">escreve</button>
+<h1>Atividade 01 - JavaScript</h1>
 
-<script type="text/javascript">
-     function minhafução(arg1,arg2){
-           
-            var soma = arg1 + arg2
-            
-            var msg = 'a soma e igual a';
-            
-            alert(msg + soma);
-        
-        }
- 
-function escreve(arg){
-      document.write(arg);
-}
+<button onclick="minhaFuncao()">Clique</button>
 
-<button onclick="minhafunção('10,20')">Clique</button>
+<button onclick="minhaFuncaoArg('Argumento 01')">Argumento 01</button>
 
-function escreve(arg){
-     
-    document.write(arg);
+<button onclick="minhaFuncaoArg(1500)">1500</button>
 
-}
+<button onclick="minhaFuncaoArg(true)">true</button>
+
+<button onclick="minhaFuncaoNumerica(10, 20)">Somar 10 + 20</button>
+
+<button onclick="minhaFuncaoSoma(10, 20)">Mostrar soma</button>
+
+<button onclick="escreve('<h1>PROGRAMAÇÃO WEB</h1>')">Escreve</button>
+
+</body>
+</html>
 
 
- </script>
 
 
-<div>
-</div>
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
