@@ -6,31 +6,52 @@
     <title>Document</title>
 </head>
 <body>
-    
-<script>
+    <div>
+   <script>
+function calcularRaizes() {
+    let raiz25 = Math.sqrt(25);
+    let raiz36 = Math.sqrt(36);
+    let raiz49 = Math.sqrt(49);
 
-var raiz = match.sqrt(arg) ;
-
-function escreveDiv(texto){
-       document.getElementById("minhaDiv").innerHTML = text;
+    console.log("Raiz de 25 = " + raiz25);
+    console.log("Raiz de 36 = " + raiz36);
+    console.log("Raiz de 49 = " + raiz49);
 }
 
-
+calcularRaizes();
 
 
 </script>
 
 
-<h1>Escrevendo na Div</h1>
-
-<button onclick="escreveDiv('<h1> Programação Web</h1>')">escrever</button> <br><br>
-
-<div id="minhaDiv"></div>
 
 
+ <div id="resultado"></div>
+
+    <script>
+        function escreveDiv() {
+            document.getElementById("resultado").innerHTML = "Olá! Este texto foi escrito dentro da div.";
+        }
+
+        escreveDiv();
+    </script>
 
 
-    
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
