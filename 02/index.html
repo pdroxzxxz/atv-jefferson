@@ -22,23 +22,20 @@
     </script>
 
 
-
 <div>
-    <h1>Escrevendo na Div</h1>
+        <h1>Escrevendo na Div</h1>
+
+        <button onclick="escreveDiv('<h1>Programação Web</h1>')">Escrever</button>
+        
+
+        <div id="minhaDiv"></div>
+    </div>
 
     <script>
-        function escreveDiv(texto) {
-            document.getElementById('minhaDiv').innerHTML = texto;
+        function escreveDiv(text) {
+            document.getElementById('minhaDiv').innerHTML = text;
         }
     </script>
-
-    <button onclick="escreveDiv('<h1>Programação Web</h1>')">Escrever</button><br><br>
-
-    <div id="minhaDiv"></div>
-</div>
-
-
-
 
 
 
