@@ -29,17 +29,24 @@
 
 <div>
 <h1>Escrevendo na Div</h1>
+<script>
+
+function escreveDiv(text){
+        document.getElementById('minhaDiv').innerHTML = text;
+}
+</script>
+
+<h1>Escrevendo na Div</h1>
 
     <button onclick="escreveDiv('<h1> Programação Web</h1>')">Escrever</button>
     <br><br>
 
     <div id="minhaDiv"></div>
+  
 
-    <script>
-        function escreveDiv(texto) {
-            document.getElementById("minhaDiv").innerHTML = texto;
-        }
-    </script>
+
+
+
 
 </div>
 
