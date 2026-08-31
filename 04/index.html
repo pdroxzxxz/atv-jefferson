@@ -10,18 +10,34 @@
 
 <h1>Desafio raiz</h1>
 
-<label for="numero Input">Digite o valor de N:</label>
 
-<input type="number" id="numeroInput" placeholder="Digite um número" min="1">
+<div class="bloco-raiz">
+  <h2>Raiz Quadrada de N</h2>
+  
+  <label for="numeroN">Digite o valor de N: </label>
+  <input type="number" id="numeroN" placeholder="Digite um número">
+  <button onclick="calcularRaiz()">Raiz de N</button>
 
-<button onclick="calcularRaiz()">Escrever Números</button>
- <script>
-        function calcularRaiz(numero) {
-            let raiz = Math.sqrt(numero);
-            alert("A raiz quadrada de " + numero + " é " + raiz);
-        }
-    </script>
+  <p id="resultado"></p>
+</div>
 
+<script>
+function calcularRaiz() {
+ 
+  const valorInput = document.getElementById('numeroN').value;
+  const n = parseInt(valorInput, 10);
+
+  if (isNaN(n) || n <= 0) {
+    alert("Por favor, digite um número inteiro válido e maior que zero!");
+  } else {
+
+    const raiz = Math.sqrt(n);
+    document.getElementById('resultado').textContent = `A raiz quadrada de ${n} é: ${raiz}`;
+  }
+}
+</script>
+
+   
 
 
 
