@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    let pilhapessoas = Array();
+
+
+
+ function mostrarLista(){
+const container = document.getElementById('minhaDiv');
+container.innerHTML = ''; // Limpa o conteúdo atual do container
+for (var i = 0 ; i < pilhaPessoas.length; i++) { // mostra os elementos var tag = '<h5>' + i + ' ' + pilhaPessoas [i] + '</h5>'; container.innerHTML += tag;
+}
+
+function adicionar(){
+var nome = prompt('Qual o nome da pessoa?')
+pilhaPessoas.push(nome);
+mostrarLista();
+}
+
+function posicao() {
+// pede o índice
+var indice = prompt('Qual posição da lista deseja consultar?');
+// converte para número
+indice = Number(indice);
+// valida se o índice está dentro do intervalo
+if (indice < 0 || indice >= pilhaPessoas.length) {
+alert('Posição inválida!');
+return;
+}
+// se tudo certo, mostra o nome
+alert('Na posição + indice+' está: +pilhaPessoas [indice] );
+}
+
+
+// Função para remover a última pessoa (topo da pilha)
+function remover() {
+if (pilhaPessoas.length === 0) {
+alert('A pilha está vazia!');
+} else {
+// remove o último elemento
+let removido = pilhaPessoas.pop();
+alert('Removido: ' + removido );
+mostrarlista();
+}
+
+function limparLista(){
+pilhaPessoas = [];// reseta o array
+mostrarLista();
+}
+
+<body>
+
+    <h1>Lista de Pessoas</h1>
+
+<button onclick="adicionar()">Adicionar Pessoa</button>
+
+<button onclick="posicao()">Posição</button>
+
+<button onclick="remover()">Remover</button>
+
+<button onclick="limparlista()">Limpar</button> <br><br>
+
+<div id="minhaDiv"></div>
+
+<hr>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
