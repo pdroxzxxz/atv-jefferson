@@ -77,12 +77,30 @@
     }
 	
 	function salvar() {
-		// implementar função salvar
-    }
+		const nome = document.getElementById('nome').value.trim();
+const contato = document.getElementById('contato').value.trim();
+if (indiceEdicao === null) {
+// Adicionando novo
+pilhaPessoas.push({ nome, contato });
+} else {
+// Editando existente
+pilhaPessoas [indiceEdicao] = { nome, contato };
+indiceEdicao = null; // reseta o modo de edição
+}
+// Limpa o formulário
+document.getElementById('nome').value = '';
+document.getElementById('contato').value = 
+mostrarLista();
+}
+    
 
    function editarContato(indice) {
-      // implementar a função editar a partir de um indice
-    }
+      }
+const pessoa = pilhaPessoas [indice];
+document.getElementById('nome').value = pessoa.nome;
+document.getElementById('contato').value = pessoa.contato;
+indiceEdicao = indice; // marca qual está sendo editado
+    
 	
 	function removerContato(indice) {
       // implementar a função remover a partir de um indice
